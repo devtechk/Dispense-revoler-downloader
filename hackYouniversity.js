@@ -4,14 +4,16 @@
 // @version      0.1
 // @description  Completare la % di visione dei video
 // @author       You
-// @match    https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/lesson_student_view.php*
+// @match    https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/*
 // @require https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=greasyfork.org
 // @grant        none
- // @license MIT 
+// @run-at      document-start
+// @license MIT 
 // ==/UserScript==
 /* global $ */
 (function() {
+    console.log("MY CODE");
 function Video(e, t, r, o, n, i, a, l, c, s, u) {
     var d, p, m, v, f, _, w, g, h, b = 0, x = 0, F = 20, T = 0, S = 0, k = 0, z = 0, y = null;
     var pause = true;
