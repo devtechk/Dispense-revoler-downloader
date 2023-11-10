@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HackIUniversityVideo
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Completare la % di visione dei video
 // @author       You
 // @match    https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/*
