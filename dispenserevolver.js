@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dispense revoler downloader
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Apre i link di tutte le dispense in una pagina nuova prima controlla che il captcha sia risolto
 // @author       You
 // @match    https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/*
