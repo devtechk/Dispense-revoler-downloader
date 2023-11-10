@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Dispense revoler downloader
+// @name         Dispense revolver downloader
 // @namespace    http://tampermonkey.net/
 // @version      0.4
 // @description  Apre i link di tutte le dispense in una pagina nuova prima controlla che il captcha sia risolto
