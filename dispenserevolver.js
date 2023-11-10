@@ -2,7 +2,7 @@
 // @name         Dispense revoler downloader
 // @namespace    http://tampermonkey.net/
 // @version      0.2
-// @description  tApre i link di tutte le dispense in una pagina nuova prima controlla che il captcha sia risolto
+// @description  Apre i link di tutte le dispense in una pagina nuova prima controlla che il captcha sia risolto
 // @author       You
 // @match    https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=multiversity.click
