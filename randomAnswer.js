@@ -12,7 +12,7 @@
 
 (function () {
     'use strict';
-    $("#content").append("<button id='downloadDispenze' class='scriptBtn'>Random order</button>");
+    $(".panel-default").append("<button id='downloadDispenze' class='scriptBtn'>Random order</button>");
     $('#downloadDispenze').on('click', function () {
         // Chiamare la funzione per mescolare le righe delle tabelle
         shuffleTableRows();
