@@ -13,7 +13,7 @@
 // ==/UserScript==
 /* global $ */
 (function() {
-    console.log("MY CODE");
+    console.log("MY CODE YODA");
 function Video(e, t, r, o, n, i, a, l, c, s, u) {
     var d, p, m, v, f, _, w, g, h, b = 0, x = 0, F = 20, T = 0, S = 0, k = 0, z = 0, y = null;
     var pause = true;
