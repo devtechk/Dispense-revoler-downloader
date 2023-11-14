@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Random answer 
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.2
 // @description  Cambia l'ordinamento delle domande dei test di fine lezione
 // @author       You
 // @match    https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/*
@@ -12,7 +12,7 @@
 
 (function () {
     'use strict';
-    $(".panel-default").append("<button id='downloadDispenze' class='scriptBtn'>Random order</button>");
+    $("#main-contents").append("<button id='downloadDispenze' class='scriptBtn'>Random order</button>");
     $('#downloadDispenze').on('click', function () {
         // Chiamare la funzione per mescolare le righe delle tabelle
         shuffleTableRows();
@@ -76,6 +76,9 @@ const injectCSS = css => {
         border-radius: 10px;
         padding: 10px;
         box-shadow: 5px 5px 8px -5px rgba(0,0,0,0.69);
+        top: 100px;
+        position: absolute;
+        left: 500px;
      }
   
   `);
