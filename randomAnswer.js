@@ -4,7 +4,7 @@
 // @version      0.2
 // @description  Cambia l'ordinamento delle domande dei test di fine lezione
 // @author       You
-// @match    https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/*
+// @match        https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/lesson_student_view.php*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=multiversity.click
 // @grant        none
 // @license MIT
