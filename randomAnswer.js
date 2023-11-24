@@ -78,7 +78,7 @@ const injectCSS = css => {
         box-shadow: 5px 5px 8px -5px rgba(0,0,0,0.69);
         top: 100px;
         position: absolute;
-        left: 500px;
+        left: 540px;
      }
   
   `);
