@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Random answer 
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Cambia l'ordinamento delle domande dei test di fine lezione.
 // @author       You
 // @match        https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/lesson_student_view.php*
@@ -9,6 +9,8 @@
 // @grant        none
 // @license MIT
 // @require http://code.jquery.com/jquery-latest.js
+// @downloadURL https://update.greasyfork.org/scripts/479866/Random%20answer.user.js
+// @updateURL https://update.greasyfork.org/scripts/479866/Random%20answer.meta.js
 // ==/UserScript==
 /* global $ */
 
@@ -42,22 +44,39 @@
         });
     }
     //RANDOME BOXES END
-    if(!$('.button-container')) {
-                // Creazione di un nuovo elemento div
-    var buttonContainer = document.createElement("div");
+    function htmlToNode(htmlString) {
+        // Crea un oggetto Range
+        var range = document.createRange();
 
-    // Assegnazione della classe "colore" al nuovo div
-    buttonContainer.classList.add("button-container");
+        // Crea un nodo DocumentFragment utilizzando createContextualFragment
+        var fragment = range.createContextualFragment(htmlString);
+
+        // Restituisci il primo nodo del DocumentFragment
+        return fragment.firstChild;
+    }
+    if(document.querySelector('.button-container')) {
+
+
+        // Esempio di utilizzo
+        buttonContainer = document.querySelector('.button-container');
+        var htmlString = "<button id='downloadDispenze' class='scriptBtn'>Random order</button>";
+        var nodoDOM = htmlToNode(htmlString);
+        buttonContainer.appendChild(nodoDOM)
+        // Aggiunta del pulsante al div
     } else {
 
+        // Creazione di un nuovo elemento div
+        var buttonContainer = document.createElement("div");
 
-    // Aggiunta del pulsante al div
-    buttonContainer.innerHTML = "<button id='downloadDispenze' class='scriptBtn'>Random order</button>";
+        // Assegnazione della classe "colore" al nuovo div
+        buttonContainer.classList.add("button-container");
+        // Aggiunta del div al body (puoi aggiungerlo dove preferisci)
+        document.body.appendChild(buttonContainer);
+        buttonContainer.innerHTML = "<button id='downloadDispenze' class='scriptBtn'>Random order</button>";
 
-    // Aggiunta del div al body (puoi aggiungerlo dove preferisci)
-    document.body.appendChild(buttonContainer);
-        
+
     }
+
     $('#downloadDispenze').on('click', function () {
         // Chiamare la funzione per mescolare le righe delle tabelle
         shuffleTableRows();
