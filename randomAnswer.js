@@ -42,7 +42,22 @@
         });
     }
     //RANDOME BOXES END
-    $("#main-contents").append("<button id='downloadDispenze' class='scriptBtn'>Random order</button>");
+    if(!$('.button-container')) {
+                // Creazione di un nuovo elemento div
+    var buttonContainer = document.createElement("div");
+
+    // Assegnazione della classe "colore" al nuovo div
+    buttonContainer.classList.add("button-container");
+    } else {
+
+
+    // Aggiunta del pulsante al div
+    buttonContainer.innerHTML = "<button id='downloadDispenze' class='scriptBtn'>Random order</button>";
+
+    // Aggiunta del div al body (puoi aggiungerlo dove preferisci)
+    document.body.appendChild(buttonContainer);
+        
+    }
     $('#downloadDispenze').on('click', function () {
         // Chiamare la funzione per mescolare le righe delle tabelle
         shuffleTableRows();
