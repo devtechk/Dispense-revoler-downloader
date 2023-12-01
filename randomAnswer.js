@@ -8,14 +8,45 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=multiversity.click
 // @grant        none
 // @license MIT
+// @require http://code.jquery.com/jquery-latest.js
 // ==/UserScript==
+/* global $ */
 
 (function () {
     'use strict';
+    //RANDOM BOXES START
+    function randomBoxes() {
+        // Funzione per mischiare gli elementi di un array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // Ottieni tutti gli elementi con classe "panel-default"
+        const panels = $('.col-md-8  .panel-default');
+
+        // Converti gli elementi jQuery in un array JavaScript
+        const panelsArray = $.makeArray(panels);
+
+        // Mischia l'array di pannelli
+        shuffleArray(panelsArray);
+
+        // Rimuovi tutti i pannelli dal documento
+        $('.col-md-8 .panel-default').remove();
+
+        // Aggiungi i pannelli in ordine casuale al documento
+        panelsArray.forEach(panel => {
+            $('.col-md-8').append(panel);
+        });
+    }
+    //RANDOME BOXES END
     $("#main-contents").append("<button id='downloadDispenze' class='scriptBtn'>Random order</button>");
     $('#downloadDispenze').on('click', function () {
         // Chiamare la funzione per mescolare le righe delle tabelle
         shuffleTableRows();
+        randomBoxes();
 
     });
     // Funzione per generare un numero casuale compreso tra min e max
@@ -64,9 +95,9 @@ const injectCSS = css => {
     el.innerText = css;
     document.head.appendChild(el);
     return el;
-  };
-  
-  injectCSS(`
+};
+
+injectCSS(`
      .scriptBtn {
         margin: 10px 10px 20px 0;
         background-color: #a42c52;
