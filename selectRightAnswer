@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Auto select all right answer
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  try to take over the world!
 // @author       You
 // @run-at document-start
@@ -117,6 +117,7 @@ injectCSS(`
     align-content: center;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     }
 
   `);
