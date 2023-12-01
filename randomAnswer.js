@@ -142,8 +142,19 @@ injectCSS(`
         padding: 10px;
         box-shadow: 5px 5px 8px -5px rgba(0,0,0,0.69);
         top: 100px;
-        position: absolute;
         left: 540px;
      }
+          .button-container {
+          position: absolute;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    }
   
   `);
