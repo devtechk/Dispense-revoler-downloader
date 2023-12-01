@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Auto select all right answer
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  try to take over the world!
 // @author       You
 // @run-at document-start
@@ -109,9 +109,8 @@ injectCSS(`
      }
      .button-container {
      position: absolute;
-    height: 100px;
+    height: 70px;
     width: 100%;
-    z-index: -1;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
