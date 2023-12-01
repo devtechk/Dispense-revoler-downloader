@@ -148,7 +148,7 @@ injectCSS(`
           position: absolute;
     height: 100px;
     width: 100%;
-    z-index: 1;
+    z-index: -1;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
