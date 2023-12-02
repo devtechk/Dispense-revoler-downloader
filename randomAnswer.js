@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Random answer 
 // @namespace    http://tampermonkey.net/
-// @version      0.10
+// @version      0.11
 // @description  Cambia l'ordinamento delle domande dei test di fine lezione.
 // @author       You
 // @match        https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/lesson_student_view.php*
@@ -143,12 +143,14 @@ injectCSS(`
         box-shadow: 5px 5px 8px -5px rgba(0,0,0,0.69);
         top: 100px;
         left: 540px;
+        width: 100px;
+        height: 100px;
      }
      .button-container {
     z-index: 1;
     right: 0;
     position: fixed;
-    top: 69%;
+    top: 35%
     padding: 10px;
     display: flex;
     flex-direction: column;
