@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Auto select all right answer
 // @namespace    http://tampermonkey.net/
-// @version      0.9
+// @version      0.10
 // @description  try to take over the world!
 // @author       You
 // @run-at document-start
-// @match    https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/*
+// @match        https://lms-courses.pegaso.multiversity.click/main/lp-video_student_view/lesson_student_view.php*
 // @require https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js/
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
