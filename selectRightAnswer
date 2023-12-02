@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Auto select all right answer
 // @namespace    http://tampermonkey.net/
-// @version      0.8
+// @version      0.9
 // @description  try to take over the world!
 // @author       You
 // @run-at document-start
@@ -119,7 +119,7 @@ injectCSS(`
     z-index: 1;
     right: 0;
     position: fixed;
-    top: 69%;
+    top: 35%;
     padding: 10px;
     display: flex;
     flex-direction: column;
