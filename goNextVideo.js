@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         HackIUniversityVideo
+// @name         goNextVideo
 // @namespace    http://tampermonkey.net/
 // @version      0.2
 // @description  Completare la % di visione dei video
