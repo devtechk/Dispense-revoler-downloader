@@ -1,3 +1,17 @@
+// ==UserScript==
+// @name         HackIUniversityVideo
+// @namespace    http://tampermonkey.net/
+// @version      0.2
+// @description  Completare la % di visione dei video
+// @author       You
+// @match    https://lms.pegaso.multiversity.click/videolezione/*
+// @require https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=greasyfork.org
+// @grant        none
+// @run-at      document-start
+// @license MIT 
+// ==/UserScript==
+/* global $ */
 (function () {
     function loopInteractive() {
 
